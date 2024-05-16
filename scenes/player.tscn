@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d0jni0jf1nmik" path="res://mystic_woods_free_2.1/sprites/characters/player.png" id="2_6emhs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n63gi"]
-size = Vector2(13, 20)
+size = Vector2(17, 27)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0fa84"]
 atlas = ExtResource("2_6emhs")
@@ -420,9 +420,13 @@ animations = [{
 script = ExtResource("1_cmkfp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 8)
+position = Vector2(0.5, 11.5)
 shape = SubResource("RectangleShape2D_n63gi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4.76837e-07, 0)
+scale = Vector2(1.27083, 1.3125)
 sprite_frames = SubResource("SpriteFrames_g3o7k")
 animation = &"front_idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
