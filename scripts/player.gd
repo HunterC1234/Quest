@@ -9,7 +9,7 @@ func _ready():
 func _physics_process(delta):
 	_player_movement(delta)
 
-func _player_movement(delta):
+func _player_movement(_delta):
 	if Input.is_action_pressed("ui_right"):
 		current_dir = "right"
 		play_anim(1)
