@@ -186,8 +186,8 @@ layer_1/tile_data = PackedInt32Array(1441843, 0, 5, 1179700, 0, 5, 917555, 0, 5,
 layer_2/name = "mountains"
 layer_2/tile_data = PackedInt32Array()
 
-[node name="pet" parent="." instance=ExtResource("5_2i6xh")]
-position = Vector2(180, 65)
-
 [node name="player" parent="." instance=ExtResource("4_gsrqq")]
 position = Vector2(48, 25)
+
+[node name="pet" parent="." instance=ExtResource("5_2i6xh")]
+position = Vector2(209, 114)
