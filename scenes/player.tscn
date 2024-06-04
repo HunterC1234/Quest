@@ -428,9 +428,12 @@ animation = &"front_idle"
 offset = Vector2(2.08165e-12, -15)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_right = 2047
+limit_bottom = 896
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 y_sort_enabled = true
 position = Vector2(3.55271e-15, -4)
-scale = Vector2(1, 1)
 shape = SubResource("CircleShape2D_dml71")

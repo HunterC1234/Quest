@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717460970
+::res://::1717465159
 icon.svg::CompressedTexture2D::6479646389518922788::1716340932::1716340932::1::::<><>::
 pet.gd::GDScript::-1::1717457922::0::1::::<>CharacterBody2D<>::
-pet.tscn::PackedScene::4402414340722005186::1717458222::0::1::::<><>::res://pet.gd<>uid://blvtpmlnvubu0::::res://mystic_woods_free_2.1/sprites/characters/slime.png
+pet.tscn::PackedScene::4402414340722005186::1717464878::0::1::::<><>::res://pet.gd<>uid://blvtpmlnvubu0::::res://mystic_woods_free_2.1/sprites/characters/slime.png
 README.md::TextFile::-1::1716340932::0::1::::<><>::
 ::res://mystic_woods_free_2.1/::1716341010
 read_me.txt::TextFile::-1::1716340932::0::1::::<><>::
@@ -46,9 +46,9 @@ wooden.png::CompressedTexture2D::541437908050116511::1716340932::1716340932::1::
 walls.png::CompressedTexture2D::3599988970689595439::1716340932::1716340932::1::::<><>::
 wooden_door.png::CompressedTexture2D::6994630025324413487::1716340932::1716340932::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::4075949827093003156::1716340932::1716340932::1::::<><>::
-::res://scenes/::1717458236
-player.tscn::PackedScene::7297936387209769774::1717458222::0::1::::<><>::res://scripts/player.gd<>uid://d0jni0jf1nmik::::res://mystic_woods_free_2.1/sprites/characters/player.png
-world.tscn::PackedScene::2104324843554144621::1717458236::0::1::::<><>::uid://bepyolj0xdxa1::::res://mystic_woods_free_2.1/sprites/objects/objects.png<>uid://b7cx3lnghcl3x::::res://mystic_woods_free_2.1/sprites/tilesets/grass.png<>uid://cge1rifgqro5p::::res://mystic_woods_free_2.1/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://pet.tscn
+::res://scenes/::1717465138
+player.tscn::PackedScene::7297936387209769774::1717464878::0::1::::<><>::res://scripts/player.gd<>uid://d0jni0jf1nmik::::res://mystic_woods_free_2.1/sprites/characters/player.png
+world.tscn::PackedScene::2104324843554144621::1717465138::0::1::::<><>::uid://bepyolj0xdxa1::::res://mystic_woods_free_2.1/sprites/objects/objects.png<>uid://b7cx3lnghcl3x::::res://mystic_woods_free_2.1/sprites/tilesets/grass.png<>uid://cge1rifgqro5p::::res://mystic_woods_free_2.1/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://pet.tscn
 ::res://scripts/::1716341010
 player.gd::GDScript::-1::1717030098::0::1::::<>CharacterBody2D<>::
 ::res://test/::1716341066
