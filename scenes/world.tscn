@@ -292,7 +292,7 @@ y_sort_enabled = true
 position = Vector2(736, 484)
 
 [node name="pet" parent="." instance=ExtResource("5_2i6xh")]
-position = Vector2(815, 472)
+position = Vector2(884, 453)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-7, 21)
