@@ -1,3 +1,4 @@
+TileMap
 CollisionShape2D
 AnimatedSprite2D
 Area2D
@@ -5,4 +6,3 @@ CharacterBody2D
 CollisionPolygon2D
 Polygon2D
 Camera2D
-TileMap
