@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717653954
+::res://::1717653175
 icon.svg::CompressedTexture2D::6479646389518922788::1717652643::1717652643::1::::<><>::
 pet.gd::GDScript::-1::1717652643::0::1::::<>CharacterBody2D<>::
-pet.tscn::PackedScene::4402414340722005186::1717653426::0::1::::<><>::res://pet.gd<>uid://blvtpmlnvubu0::::res://mystic_woods_free_2.1/sprites/characters/slime.png
+pet.tscn::PackedScene::4402414340722005186::1717652643::0::1::::<><>::res://pet.gd<>uid://blvtpmlnvubu0::::res://mystic_woods_free_2.1/sprites/characters/slime.png
 README.md::TextFile::-1::1717652643::0::1::::<><>::
 ::res://mystic_woods_free_2.1/::1717652747
 read_me.txt::TextFile::-1::1717652643::0::1::::<><>::
@@ -48,8 +48,8 @@ wooden.png::CompressedTexture2D::541437908050116511::1717652643::1717652643::1::
 walls.png::CompressedTexture2D::3599988970689595439::1717652643::1717652643::1::::<><>::
 wooden_door.png::CompressedTexture2D::6994630025324413487::1717652643::1717652643::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::4075949827093003156::1717652643::1717652643::1::::<><>::
-::res://scenes/::1717653941
-player.tscn::PackedScene::7297936387209769774::1717653426::0::1::::<><>::res://scripts/player.gd<>uid://d0jni0jf1nmik::::res://mystic_woods_free_2.1/sprites/characters/player.png
-world.tscn::PackedScene::2104324843554144621::1717653941::0::1::::<><>::uid://b7cx3lnghcl3x::::res://mystic_woods_free_2.1/sprites/tilesets/grass.png<>uid://chv28vxm1weiw::::res://mystic_woods_free_2.1/sprites/objects/Serene_Village_16x16.png<>uid://cge1rifgqro5p::::res://mystic_woods_free_2.1/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://pet.tscn
+::res://scenes/::1717652747
+player.tscn::PackedScene::7297936387209769774::1717652643::0::1::::<><>::res://scripts/player.gd<>uid://d0jni0jf1nmik::::res://mystic_woods_free_2.1/sprites/characters/player.png
+world.tscn::PackedScene::2104324843554144621::1717652734::0::1::::<><>::uid://b7cx3lnghcl3x::::res://mystic_woods_free_2.1/sprites/tilesets/grass.png<>uid://chv28vxm1weiw::::res://mystic_woods_free_2.1/sprites/objects/Serene_Village_16x16.png<>uid://cge1rifgqro5p::::res://mystic_woods_free_2.1/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://pet.tscn
 ::res://scripts/::1717652668
 player.gd::GDScript::-1::1717652643::0::1::::<>CharacterBody2D<>::
