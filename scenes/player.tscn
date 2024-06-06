@@ -414,7 +414,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dml71"]
-radius = 6.0
+radius = 5.0
 
 [node name="player" type="CharacterBody2D"]
 collision_layer = 3
