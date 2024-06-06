@@ -421,8 +421,8 @@ collision_layer = 3
 script = ExtResource("1_cmkfp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -2.65648)
-scale = Vector2(1.02604, 1.03445)
+position = Vector2(0, -3)
+scale = Vector2(1.27083, 1.3125)
 sprite_frames = SubResource("SpriteFrames_g3o7k")
 animation = &"back_walk"
 frame_progress = 0.385121
