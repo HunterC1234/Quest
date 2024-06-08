@@ -1,0 +1,46 @@
+~ main
+if global.found_old_mans_item == true
+	if global.given_old_man_item == false
+		Old Man: [[Hi|Hello|Howdy]]... how may I help?
+		- Leave => END
+		- I think I have something for you...
+			Old man: Oh really...?
+			- Yes, I found something with your name on it...
+					Old Man: Ahhh.. My old robe.. Thank you traveller...
+					Old Man: Is there anything I can do for you in return for this gift..?
+					set global.given_old_man_item = true
+					- Where do I go from here..?
+						Old Man: You must explore the forest behind my house.. There is a new town towards the north...
+					- No im okay thanks => END
+			- No, I lied => END
+		- Who are you?	
+			Old man: I'm simply just an old man...
+			- Leave => END
+			- I think I have something for you...
+			Old man: Oh really...?
+			- Yes, I found something with your name on it...
+				if global.found_old_mans_item == true
+					set global.given_old_man_item = true
+					Old Man: Ahhh.. My old robe.. Thank you traveller...
+					Old Man: Is there anything I can do for you in return for this gift..?
+					- Where do I go from here..?
+						Old Man: You must explore the forest behind my house.. There is a new town towards the north...
+					- No im okay thanks => END
+			- No, I lied => END
+	else:
+		Old Man: Thank you for finding my robe, remember, there is a city to the north that needs exploring => END
+	
+else:
+	Old Man: [[Hello|Hi|Howdy]] young man, could you do me a favour...?
+	- No... => END
+
+	- Yes, Of course!
+		Old Man: I have lost my robe... Would you be able to find it for me...?
+		=> END
+	
+	
+	
+	
+
+
+=> END

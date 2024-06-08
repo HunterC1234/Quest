@@ -1,0 +1,603 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_rxhh5"]
+
+[resource]
+script = ExtResource("1_rxhh5")
+using_states = PackedStringArray()
+titles = {
+"main": "2"
+}
+character_names = PackedStringArray("Old Man", "Old man")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "main",
+"type": &"title"
+},
+"10": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"notes": "",
+"parent_id": "8",
+"tags": PackedStringArray(),
+"text": "Is there anything I can do for you in return for this gift..?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Is there anything I can do for you in return for this gift..?",
+"type": &"dialogue"
+},
+"11": {
+"id": "11",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "given_old_man_item"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "12",
+"parent_id": "8",
+"type": &"mutation"
+},
+"12": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "8",
+"responses": PackedStringArray("12", "14"),
+"tags": PackedStringArray(),
+"text": "Where do I go from here..?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Where do I go from here..?",
+"type": &"response"
+},
+"13": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "46",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "You must explore the forest behind my house.. There is a new town towards the north...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You must explore the forest behind my house.. There is a new town towards the north...",
+"type": &"dialogue"
+},
+"14": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "end",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "No im okay thanks",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No im okay thanks",
+"type": &"response"
+},
+"15": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "end",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "6",
+"tags": PackedStringArray(),
+"text": "No, I lied",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No, I lied",
+"type": &"response"
+},
+"16": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "Who are you?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Who are you?",
+"type": &"response"
+},
+"17": {
+"character": "Old man",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"notes": "",
+"parent_id": "16",
+"tags": PackedStringArray(),
+"text": "I'm simply just an old man...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I'm simply just an old man...",
+"type": &"dialogue"
+},
+"18": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "end",
+"next_id_after": "20",
+"notes": "",
+"parent_id": "16",
+"responses": PackedStringArray("18", "19"),
+"tags": PackedStringArray(),
+"text": "Leave",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Leave",
+"type": &"response"
+},
+"19": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"next_id_after": "20",
+"notes": "",
+"parent_id": "16",
+"tags": PackedStringArray(),
+"text": "I think I have something for you...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I think I have something for you...",
+"type": &"response"
+},
+"2": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "found_old_mans_item"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "variable",
+"value": "true"
+}])
+},
+"id": "2",
+"next_conditional_id": "33",
+"next_id": "3",
+"next_id_after": "46",
+"type": &"condition"
+},
+"20": {
+"character": "Old man",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"notes": "",
+"parent_id": "16",
+"tags": PackedStringArray(),
+"text": "Oh really...?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh really...?",
+"type": &"dialogue"
+},
+"21": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "16",
+"responses": PackedStringArray("21", "29"),
+"tags": PackedStringArray(),
+"text": "Yes, I found something with your name on it...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes, I found something with your name on it...",
+"type": &"response"
+},
+"22": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "found_old_mans_item"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "variable",
+"value": "true"
+}])
+},
+"id": "22",
+"next_conditional_id": "46",
+"next_id": "23",
+"next_id_after": "46",
+"parent_id": "21",
+"type": &"condition"
+},
+"23": {
+"id": "23",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "given_old_man_item"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "24",
+"parent_id": "22",
+"type": &"mutation"
+},
+"24": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"notes": "",
+"parent_id": "22",
+"tags": PackedStringArray(),
+"text": "Ahhh.. My old robe.. Thank you traveller...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ahhh.. My old robe.. Thank you traveller...",
+"type": &"dialogue"
+},
+"25": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "25",
+"next_id": "26",
+"notes": "",
+"parent_id": "22",
+"tags": PackedStringArray(),
+"text": "Is there anything I can do for you in return for this gift..?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Is there anything I can do for you in return for this gift..?",
+"type": &"dialogue"
+},
+"26": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "22",
+"responses": PackedStringArray("26", "28"),
+"tags": PackedStringArray(),
+"text": "Where do I go from here..?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Where do I go from here..?",
+"type": &"response"
+},
+"27": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "46",
+"notes": "",
+"parent_id": "26",
+"tags": PackedStringArray(),
+"text": "You must explore the forest behind my house.. There is a new town towards the north...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You must explore the forest behind my house.. There is a new town towards the north...",
+"type": &"dialogue"
+},
+"28": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "end",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "22",
+"tags": PackedStringArray(),
+"text": "No im okay thanks",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No im okay thanks",
+"type": &"response"
+},
+"29": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "end",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "16",
+"tags": PackedStringArray(),
+"text": "No, I lied",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No, I lied",
+"type": &"response"
+},
+"3": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "given_old_man_item"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "variable",
+"value": "false"
+}])
+},
+"id": "3",
+"next_conditional_id": "30",
+"next_id": "4",
+"next_id_after": "46",
+"parent_id": "2",
+"type": &"condition"
+},
+"30": {
+"id": "30",
+"next_conditional_id": "46",
+"next_id": "31",
+"next_id_after": "46",
+"parent_id": "2",
+"type": &"condition"
+},
+"31": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "46",
+"notes": "",
+"parent_id": "30",
+"tags": PackedStringArray(),
+"text": "Thank you for finding my robe, remember, there is a city to the north that needs exploring => END",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Thank you for finding my robe, remember, there is a city to the north that needs exploring => END",
+"type": &"dialogue"
+},
+"33": {
+"id": "33",
+"next_conditional_id": "46",
+"next_id": "34",
+"next_id_after": "46",
+"type": &"condition"
+},
+"34": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"notes": "",
+"parent_id": "33",
+"tags": PackedStringArray(),
+"text": "[[Hello|Hi|Howdy]] young man, could you do me a favour...?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hello|Hi|Howdy]] young man, could you do me a favour...?",
+"type": &"dialogue"
+},
+"35": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "35",
+"next_id": "end",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "33",
+"responses": PackedStringArray("35", "37"),
+"tags": PackedStringArray(),
+"text": "No...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No...",
+"type": &"response"
+},
+"37": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "37",
+"next_id": "38",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "33",
+"tags": PackedStringArray(),
+"text": "Yes, Of course!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes, Of course!",
+"type": &"response"
+},
+"38": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "38",
+"next_id": "39",
+"notes": "",
+"parent_id": "37",
+"tags": PackedStringArray(),
+"text": "I have lost my robe... Would you be able to find it for me...?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I have lost my robe... Would you be able to find it for me...?",
+"type": &"dialogue"
+},
+"39": {
+"id": "39",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "37",
+"type": &"goto"
+},
+"4": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "[[Hi|Hello|Howdy]]... how may I help?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hi|Hello|Howdy]]... how may I help?",
+"type": &"dialogue"
+},
+"46": {
+"id": "46",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"5": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "end",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "3",
+"responses": PackedStringArray("5", "6", "16"),
+"tags": PackedStringArray(),
+"text": "Leave",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Leave",
+"type": &"response"
+},
+"6": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "I think I have something for you...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I think I have something for you...",
+"type": &"response"
+},
+"7": {
+"character": "Old man",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"notes": "",
+"parent_id": "6",
+"tags": PackedStringArray(),
+"text": "Oh really...?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh really...?",
+"type": &"dialogue"
+},
+"8": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"next_id_after": "46",
+"notes": "",
+"parent_id": "6",
+"responses": PackedStringArray("8", "15"),
+"tags": PackedStringArray(),
+"text": "Yes, I found something with your name on it...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes, I found something with your name on it...",
+"type": &"response"
+},
+"9": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"notes": "",
+"parent_id": "8",
+"tags": PackedStringArray(),
+"text": "Ahhh.. My old robe.. Thank you traveller...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ahhh.. My old robe.. Thank you traveller...",
+"type": &"dialogue"
+}
+}
+raw_text = "~ main
+if global.found_old_mans_item == true
+	if global.given_old_man_item == false
+		Old Man: [[Hi|Hello|Howdy]]... how may I help?
+		- Leave => END
+		- I think I have something for you...
+			Old man: Oh really...?
+			- Yes, I found something with your name on it...
+					Old Man: Ahhh.. My old robe.. Thank you traveller...
+					Old Man: Is there anything I can do for you in return for this gift..?
+					set global.given_old_man_item = true
+					- Where do I go from here..?
+						Old Man: You must explore the forest behind my house.. There is a new town towards the north...
+					- No im okay thanks => END
+			- No, I lied => END
+		- Who are you?	
+			Old man: I'm simply just an old man...
+			- Leave => END
+			- I think I have something for you...
+			Old man: Oh really...?
+			- Yes, I found something with your name on it...
+				if global.found_old_mans_item == true
+					set global.given_old_man_item = true
+					Old Man: Ahhh.. My old robe.. Thank you traveller...
+					Old Man: Is there anything I can do for you in return for this gift..?
+					- Where do I go from here..?
+						Old Man: You must explore the forest behind my house.. There is a new town towards the north...
+					- No im okay thanks => END
+			- No, I lied => END
+	else:
+		Old Man: Thank you for finding my robe, remember, there is a city to the north that needs exploring => END
+	
+else:
+	Old Man: [[Hello|Hi|Howdy]] young man, could you do me a favour...?
+	- No... => END
+
+	- Yes, Of course!
+		Old Man: I have lost my robe... Would you be able to find it for me...?
+		=> END
+	
+	
+	
+	
+
+
+=> END"
+metadata/dialogue_manager_version = "2.39.1"

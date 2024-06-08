@@ -2,12 +2,19 @@ extends CharacterBody2D
 
 var speed = 100
 
+var man_in_range = false
+
 var player_state
 
 func _ready():
 	$AnimatedSprite2D.play("front_idle")
 
 func _physics_process(delta):
+	if man_in_range == true:
+		if Input.is_action_pressed("ui_up"):
+			DialogueManager.show_example_dialogue_balloon(load("res://main.dialogue"), "main")
+			return
+		
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 
 	if direction.x == 0 and direction.y == 0:
@@ -25,6 +32,7 @@ func  play_anim(direction):
 	
 	if player_state == "idle":
 		$AnimatedSprite2D.play("front_idle")
+	
 		
 	if player_state == "walking":
 		if direction.y == -1:
@@ -38,3 +46,13 @@ func  play_anim(direction):
 			anim.flip_h = true
 			$AnimatedSprite2D.play("side_walk")
 
+
+
+func _on_detection_area_body_entered(body):
+	if body.has_method("old_man"):
+		man_in_range = true
+
+
+func _on_detection_area_body_exited(body):
+	if body.has_method("old_man"):
+		man_in_range = false
