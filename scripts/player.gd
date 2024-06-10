@@ -11,7 +11,8 @@ func _ready():
 
 func _physics_process(delta):
 	if man_in_range == true:
-		if Input.is_action_pressed("ui_up"):
+		if Input.is_action_pressed("chat"):
+			print("chatting")
 			DialogueManager.show_example_dialogue_balloon(load("res://main.dialogue"), "main")
 			return
 		
@@ -45,6 +46,8 @@ func  play_anim(direction):
 		if direction.x == -1:
 			anim.flip_h = true
 			$AnimatedSprite2D.play("side_walk")
+
+
 
 
 

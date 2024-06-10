@@ -1,8 +1,7 @@
 98a70190bc03ec62debef81a9418c486
-::res://::1717814836
-global.gd::GDScript::-1::1717808055::0::1::::<>Node<>::
+::res://::1717988528
 icon.svg::CompressedTexture2D::6479646389518922788::1715814639::1715814639::1::::<><>::
-main.dialogue::Resource::5547447121230554867::1717808594::1717808594::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+main.dialogue::Resource::5547447121230554867::1717988705::1717988705::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 README.md::TextFile::-1::1715811846::0::1::::<><>::
 ::res://addons/::1717803857
 ::res://addons/dialogue_manager/::1717803858
@@ -100,12 +99,12 @@ rock_in_water_04.png::CompressedTexture2D::3886836999224237500::1715814639::1715
 rock_in_water_05.png::CompressedTexture2D::4231914410693085310::1715814639::1715814639::1::::<><>::
 rock_in_water_06.png::CompressedTexture2D::3943102603966875633::1715814639::1715814639::1::::<><>::
 Serene_Village_16x16.png::CompressedTexture2D::5309214634792934214::1616322376::1717647110::1::::<><>::
-::res://mystic_woods_free_2.1/sprites/other/::1717804003
-dialogue.tscn::PackedScene::2352361231600582188::1717803355::0::1::::<><>::res://mystic_woods_free_2.1/sprites/other/dialogueplayer.gd<>uid://deyj5shteqlmb::::res://mystic_woods_free_2.1/sprites/other/dialogue_box.png
-dialogueplayer.gd::GDScript::-1::1717804003::0::1::::<>CanvasLayer<>::
+::res://mystic_woods_free_2.1/sprites/other/::1717987862
+dialogue.tscn::PackedScene::2352361231600582188::1717987862::0::1::::<><>::res://mystic_woods_free_2.1/sprites/other/dialogueplayer.gd<>uid://deyj5shteqlmb::::res://mystic_woods_free_2.1/sprites/other/dialogue_box.png
+dialogueplayer.gd::GDScript::-1::1717818399::0::1::::<>Control<>::
 dialogue_box.png::CompressedTexture2D::7490163475584106277::1717723104::1717723243::1::::<><>::
-::res://mystic_woods_free_2.1/sprites/other/json/::1717802828
-Man.json::JSON::-1::1717802511::0::1::::<><>::
+::res://mystic_woods_free_2.1/sprites/other/json/::1717818234
+Man.json::JSON::-1::1717818234::0::1::::<><>::
 ::res://mystic_woods_free_2.1/sprites/particles/::1715814639
 dust_particles_01.png::CompressedTexture2D::6276215870382419475::1715814639::1715814639::1::::<><>::
 ::res://mystic_woods_free_2.1/sprites/tilesets/::1715814639
@@ -130,13 +129,13 @@ wooden.png::CompressedTexture2D::541437908050116511::1715814639::1715814639::1::
 walls.png::CompressedTexture2D::3599988970689595439::1715814639::1715814639::1::::<><>::
 wooden_door.png::CompressedTexture2D::6994630025324413487::1715814639::1715814639::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::4075949827093003156::1715814639::1715814639::1::::<><>::
-::res://scenes/::1717814836
-Old Man.gd::GDScript::-1::1717808055::0::1::::<>CharacterBody2D<>::
-old_man.gd::GDScript::-1::1717809655::0::1::::<>CharacterBody2D<>::
-old_man.tscn::PackedScene::7599287463831761940::1717814829::0::1::::<><>::res://scenes/old_man.gd<>uid://d3oh6fwincqun::::res://mystic_woods_free_2.1/sprites/characters/Adam_16x16.png
+::res://scenes/::1717988573
+global.gd::GDScript::-1::1717988563::0::1::::<>Node<>::
+old_man.gd::GDScript::-1::1717988065::0::1::::<>CharacterBody2D<>::
+old_man.tscn::PackedScene::7599287463831761940::1717988573::0::1::::<><>::res://scenes/old_man.gd<>uid://d3oh6fwincqun::::res://mystic_woods_free_2.1/sprites/characters/Adam_16x16.png
 pet.gd::GDScript::-1::1717645634::0::1::::<>CharacterBody2D<>::
-pet.tscn::PackedScene::4402414340722005186::1717814834::0::1::::<><>::res://scenes/pet.gd<>uid://blvtpmlnvubu0::::res://mystic_woods_free_2.1/sprites/characters/slime.png
-player.tscn::PackedScene::7297936387209769774::1717808714::0::1::::<><>::res://scripts/player.gd<>uid://d0jni0jf1nmik::::res://mystic_woods_free_2.1/sprites/characters/player.png
-world.tscn::PackedScene::2104324843554144621::1717814836::0::1::::<><>::uid://b7cx3lnghcl3x::::res://mystic_woods_free_2.1/sprites/tilesets/grass.png<>uid://chv28vxm1weiw::::res://mystic_woods_free_2.1/sprites/objects/Serene_Village_16x16.png<>uid://cge1rifgqro5p::::res://mystic_woods_free_2.1/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://scenes/pet.tscn<>uid://d3oh6fwincqun::::res://mystic_woods_free_2.1/sprites/characters/Adam_16x16.png<>uid://0exgg8magr8g::::res://mystic_woods_free_2.1/sprites/Animated stuff/campfire_16x16.png<>uid://c0t7mvjbnw52h::::res://mystic_woods_free_2.1/sprites/characters/Alex_16x16.png<>uid://bm3mdiga6riww::::res://mystic_woods_free_2.1/sprites/Animated stuff/water_waves_16x16.png
-::res://scripts/::1717809655
-player.gd::GDScript::-1::1717809655::0::1::::<>CharacterBody2D<>::
+pet.tscn::PackedScene::4402414340722005186::1717988573::0::1::::<><>::res://scenes/pet.gd<>uid://blvtpmlnvubu0::::res://mystic_woods_free_2.1/sprites/characters/slime.png
+player.tscn::PackedScene::7297936387209769774::1717988573::0::1::::<><>::res://scripts/player.gd<>uid://d0jni0jf1nmik::::res://mystic_woods_free_2.1/sprites/characters/player.png
+world.tscn::PackedScene::2104324843554144621::1717988573::0::1::::<><>::uid://b7cx3lnghcl3x::::res://mystic_woods_free_2.1/sprites/tilesets/grass.png<>uid://chv28vxm1weiw::::res://mystic_woods_free_2.1/sprites/objects/Serene_Village_16x16.png<>uid://cge1rifgqro5p::::res://mystic_woods_free_2.1/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://scenes/pet.tscn<>uid://d3oh6fwincqun::::res://mystic_woods_free_2.1/sprites/characters/Adam_16x16.png<>uid://0exgg8magr8g::::res://mystic_woods_free_2.1/sprites/Animated stuff/campfire_16x16.png<>uid://c0t7mvjbnw52h::::res://mystic_woods_free_2.1/sprites/characters/Alex_16x16.png<>uid://bm3mdiga6riww::::res://mystic_woods_free_2.1/sprites/Animated stuff/water_waves_16x16.png<>uid://dgjffilasq7bs::::res://scenes/old_man.tscn
+::res://scripts/::1717987764
+player.gd::GDScript::-1::1717987764::0::1::::<>CharacterBody2D<>::

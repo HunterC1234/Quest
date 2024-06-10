@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dgjffilasq7bs"]
+[gd_scene load_steps=35 format=3 uid="uid://dgjffilasq7bs"]
 
 [ext_resource type="Script" path="res://scenes/old_man.gd" id="1_aea5b"]
 [ext_resource type="Texture2D" uid="uid://d3oh6fwincqun" path="res://mystic_woods_free_2.1/sprites/characters/Adam_16x16.png" id="2_w0x4m"]
@@ -244,9 +244,6 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_onx6p"]
 radius = 7.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_eocy6"]
-radius = 26.0
-
 [node name="Old Man" type="CharacterBody2D"]
 position = Vector2(2052, 754)
 script = ExtResource("1_aea5b")
@@ -260,15 +257,7 @@ frame_progress = 0.322516
 position = Vector2(0, 12)
 shape = SubResource("CircleShape2D_onx6p")
 
-[node name="chat_detection" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="chat_detection"]
-position = Vector2(0, 5)
-shape = SubResource("CircleShape2D_eocy6")
-
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
-[connection signal="body_entered" from="chat_detection" to="." method="_on_chat_detection_body_entered"]
-[connection signal="body_exited" from="chat_detection" to="." method="_on_chat_detection_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

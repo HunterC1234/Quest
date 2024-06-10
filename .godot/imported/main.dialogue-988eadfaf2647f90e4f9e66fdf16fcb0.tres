@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_rxhh5"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_avxhv"]
 
 [resource]
-script = ExtResource("1_rxhh5")
+script = ExtResource("1_avxhv")
 using_states = PackedStringArray()
 titles = {
 "main": "2"
@@ -59,7 +59,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "12",
 "next_id": "13",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
 "parent_id": "8",
 "responses": PackedStringArray("12", "14"),
@@ -73,7 +73,7 @@ lines = {
 "character": "Old Man",
 "character_replacements": Array[Dictionary]([]),
 "id": "13",
-"next_id": "46",
+"next_id": "48",
 "notes": "",
 "parent_id": "12",
 "tags": PackedStringArray(),
@@ -87,7 +87,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "14",
 "next_id": "end",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
 "parent_id": "12",
 "tags": PackedStringArray(),
@@ -101,7 +101,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "15",
 "next_id": "end",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
 "parent_id": "6",
 "tags": PackedStringArray(),
@@ -115,7 +115,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "16",
 "next_id": "17",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
 "parent_id": "3",
 "tags": PackedStringArray(),
@@ -185,9 +185,9 @@ lines = {
 }])
 },
 "id": "2",
-"next_conditional_id": "33",
+"next_conditional_id": "34",
 "next_id": "3",
-"next_id_after": "46",
+"next_id_after": "48",
 "type": &"condition"
 },
 "20": {
@@ -208,10 +208,10 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "21",
 "next_id": "22",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
 "parent_id": "16",
-"responses": PackedStringArray("21", "29"),
+"responses": PackedStringArray("21", "30"),
 "tags": PackedStringArray(),
 "text": "Yes, I found something with your name on it...",
 "text_replacements": Array[Dictionary]([]),
@@ -237,9 +237,9 @@ lines = {
 }])
 },
 "id": "22",
-"next_conditional_id": "46",
+"next_conditional_id": "48",
 "next_id": "23",
-"next_id_after": "46",
+"next_id_after": "48",
 "parent_id": "21",
 "type": &"condition"
 },
@@ -298,10 +298,10 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "26",
 "next_id": "27",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
 "parent_id": "22",
-"responses": PackedStringArray("26", "28"),
+"responses": PackedStringArray("26", "29"),
 "tags": PackedStringArray(),
 "text": "Where do I go from here..?",
 "text_replacements": Array[Dictionary]([]),
@@ -312,7 +312,7 @@ lines = {
 "character": "Old Man",
 "character_replacements": Array[Dictionary]([]),
 "id": "27",
-"next_id": "46",
+"next_id": "28",
 "notes": "",
 "parent_id": "26",
 "tags": PackedStringArray(),
@@ -322,31 +322,24 @@ lines = {
 "type": &"dialogue"
 },
 "28": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
 "id": "28",
+"is_snippet": false,
 "next_id": "end",
-"next_id_after": "46",
-"notes": "",
-"parent_id": "22",
-"tags": PackedStringArray(),
-"text": "No im okay thanks",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "No im okay thanks",
-"type": &"response"
+"parent_id": "26",
+"type": &"goto"
 },
 "29": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "29",
 "next_id": "end",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
-"parent_id": "16",
+"parent_id": "22",
 "tags": PackedStringArray(),
-"text": "No, I lied",
+"text": "No im okay thanks",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "No, I lied",
+"translation_key": "No im okay thanks",
 "type": &"response"
 },
 "3": {
@@ -368,62 +361,93 @@ lines = {
 }])
 },
 "id": "3",
-"next_conditional_id": "30",
+"next_conditional_id": "31",
 "next_id": "4",
-"next_id_after": "46",
+"next_id_after": "48",
 "parent_id": "2",
 "type": &"condition"
 },
 "30": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "id": "30",
-"next_conditional_id": "46",
-"next_id": "31",
-"next_id_after": "46",
+"next_id": "end",
+"next_id_after": "48",
+"notes": "",
+"parent_id": "16",
+"tags": PackedStringArray(),
+"text": "No, I lied",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No, I lied",
+"type": &"response"
+},
+"31": {
+"id": "31",
+"next_conditional_id": "48",
+"next_id": "32",
+"next_id_after": "48",
 "parent_id": "2",
 "type": &"condition"
 },
-"31": {
+"32": {
 "character": "Old Man",
 "character_replacements": Array[Dictionary]([]),
-"id": "31",
-"next_id": "46",
+"id": "32",
+"next_id": "48",
 "notes": "",
-"parent_id": "30",
+"parent_id": "31",
 "tags": PackedStringArray(),
 "text": "Thank you for finding my robe, remember, there is a city to the north that needs exploring => END",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Thank you for finding my robe, remember, there is a city to the north that needs exploring => END",
 "type": &"dialogue"
 },
-"33": {
-"id": "33",
-"next_conditional_id": "46",
-"next_id": "34",
-"next_id_after": "46",
+"34": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "found_old_mans_item"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "variable",
+"value": "false"
+}])
+},
+"id": "34",
+"next_conditional_id": "48",
+"next_id": "35",
+"next_id_after": "48",
 "type": &"condition"
 },
-"34": {
+"35": {
 "character": "Old Man",
 "character_replacements": Array[Dictionary]([]),
-"id": "34",
-"next_id": "35",
+"id": "35",
+"next_id": "36",
 "notes": "",
-"parent_id": "33",
+"parent_id": "34",
 "tags": PackedStringArray(),
-"text": "[[Hello|Hi|Howdy]] young man, could you do me a favour...?",
+"text": "Hi young man, could you do me a favour...?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Hello|Hi|Howdy]] young man, could you do me a favour...?",
+"translation_key": "Hi young man, could you do me a favour...?",
 "type": &"dialogue"
 },
-"35": {
+"36": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "35",
-"next_id": "end",
-"next_id_after": "46",
+"id": "36",
+"next_id": "37",
+"next_id_after": "48",
 "notes": "",
-"parent_id": "33",
-"responses": PackedStringArray("35", "37"),
+"parent_id": "34",
+"responses": PackedStringArray("36", "39"),
 "tags": PackedStringArray(),
 "text": "No...",
 "text_replacements": Array[Dictionary]([]),
@@ -431,38 +455,25 @@ lines = {
 "type": &"response"
 },
 "37": {
+"id": "37",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "36",
+"type": &"goto"
+},
+"39": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "37",
-"next_id": "38",
-"next_id_after": "46",
+"id": "39",
+"next_id": "40",
+"next_id_after": "48",
 "notes": "",
-"parent_id": "33",
+"parent_id": "34",
 "tags": PackedStringArray(),
 "text": "Yes, Of course!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yes, Of course!",
 "type": &"response"
-},
-"38": {
-"character": "Old Man",
-"character_replacements": Array[Dictionary]([]),
-"id": "38",
-"next_id": "39",
-"notes": "",
-"parent_id": "37",
-"tags": PackedStringArray(),
-"text": "I have lost my robe... Would you be able to find it for me...?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "I have lost my robe... Would you be able to find it for me...?",
-"type": &"dialogue"
-},
-"39": {
-"id": "39",
-"is_snippet": false,
-"next_id": "end",
-"parent_id": "37",
-"type": &"goto"
 },
 "4": {
 "character": "Old Man",
@@ -477,8 +488,28 @@ lines = {
 "translation_key": "[[Hi|Hello|Howdy]]... how may I help?",
 "type": &"dialogue"
 },
-"46": {
-"id": "46",
+"40": {
+"character": "Old Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "40",
+"next_id": "41",
+"notes": "",
+"parent_id": "39",
+"tags": PackedStringArray(),
+"text": "I have lost my robe... Would you be able to find it for me...?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I have lost my robe... Would you be able to find it for me...?",
+"type": &"dialogue"
+},
+"41": {
+"id": "41",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "39",
+"type": &"goto"
+},
+"48": {
+"id": "48",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
@@ -488,7 +519,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "5",
 "next_id": "end",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
 "parent_id": "3",
 "responses": PackedStringArray("5", "6", "16"),
@@ -503,7 +534,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "6",
 "next_id": "7",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
 "parent_id": "3",
 "tags": PackedStringArray(),
@@ -530,7 +561,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "8",
 "next_id": "9",
-"next_id_after": "46",
+"next_id_after": "48",
 "notes": "",
 "parent_id": "6",
 "responses": PackedStringArray("8", "15"),
@@ -581,14 +612,16 @@ if global.found_old_mans_item == true
 					Old Man: Is there anything I can do for you in return for this gift..?
 					- Where do I go from here..?
 						Old Man: You must explore the forest behind my house.. There is a new town towards the north...
+						=> END
 					- No im okay thanks => END
 			- No, I lied => END
 	else:
 		Old Man: Thank you for finding my robe, remember, there is a city to the north that needs exploring => END
 	
-else:
-	Old Man: [[Hello|Hi|Howdy]] young man, could you do me a favour...?
-	- No... => END
+elif global.found_old_mans_item == false
+	Old Man: Hi young man, could you do me a favour...?
+	- No...
+		=> END
 
 	- Yes, Of course!
 		Old Man: I have lost my robe... Would you be able to find it for me...?

@@ -25,14 +25,16 @@ if global.found_old_mans_item == true
 					Old Man: Is there anything I can do for you in return for this gift..?
 					- Where do I go from here..?
 						Old Man: You must explore the forest behind my house.. There is a new town towards the north...
+						=> END
 					- No im okay thanks => END
 			- No, I lied => END
 	else:
 		Old Man: Thank you for finding my robe, remember, there is a city to the north that needs exploring => END
 	
-else:
-	Old Man: [[Hello|Hi|Howdy]] young man, could you do me a favour...?
-	- No... => END
+elif global.found_old_mans_item == false
+	Old Man: Hi young man, could you do me a favour...?
+	- No...
+		=> END
 
 	- Yes, Of course!
 		Old Man: I have lost my robe... Would you be able to find it for me...?

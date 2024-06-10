@@ -12,7 +12,9 @@ var is_chatting = false
 var player
 var player_in_chat_zone = false
 
-
+func old_man():
+	pass
+	
 enum{
 	IDLE,
 	NEW_DIR,
@@ -44,7 +46,6 @@ func _process(delta):
 			MOVE:
 				move(delta)
 	if Input.is_action_just_pressed("chat"):
-		print("chatting with old man")
 		is_roaming = false
 		is_chatting = true
 		$AnimatedSprite2D.play("idle")
@@ -57,14 +58,7 @@ func move(delta):
 	if !is_chatting:
 		position += dir * speed * delta
 
-func _on_chat_detection_body_entered(body):
-	if body.has_method("player"):
-		player = body
-		player_in_chat_zone = true
-		
-func _on_chat_detection_body_exited(body):
-	if body.has_method("player"):
-		player_in_chat_zone = true
+
 
 
 func _on_timer_timeout():
