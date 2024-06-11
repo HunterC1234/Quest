@@ -1,7 +1,7 @@
 [gd_scene load_steps=35 format=3 uid="uid://dgjffilasq7bs"]
 
-[ext_resource type="Script" path="res://scenes/old_man.gd" id="1_aea5b"]
-[ext_resource type="Texture2D" uid="uid://d3oh6fwincqun" path="res://mystic_woods_free_2.1/sprites/characters/Adam_16x16.png" id="2_w0x4m"]
+[ext_resource type="Script" path="res://scripts/old_man.gd" id="1_aea5b"]
+[ext_resource type="Texture2D" uid="uid://d3oh6fwincqun" path="res://Assets/sprites/characters/Adam_16x16.png" id="2_w0x4m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r11e4"]
 atlas = ExtResource("2_w0x4m")

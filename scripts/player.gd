@@ -13,7 +13,7 @@ func _physics_process(delta):
 	if man_in_range == true:
 		if Input.is_action_pressed("chat"):
 			print("chatting")
-			DialogueManager.show_example_dialogue_balloon(load("res://main.dialogue"), "main")
+			DialogueManager.show_example_dialogue_balloon(load("res://scripts/main.dialogue"), "main")
 			return
 		
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
