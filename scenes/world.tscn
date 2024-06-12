@@ -962,10 +962,10 @@ position = Vector2(642, 573)
 
 [node name="fadein" type="ColorRect" parent="."]
 top_level = true
-offset_left = -207.0
-offset_top = -36.0
-offset_right = 1578.0
-offset_bottom = 910.0
+offset_left = -244.0
+offset_top = -20.0
+offset_right = 1541.0
+offset_bottom = 926.0
 color = Color(0, 0, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="fadein"]
