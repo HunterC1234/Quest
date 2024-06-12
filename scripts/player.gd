@@ -47,6 +47,7 @@ func  play_anim(direction):
 			anim.flip_h = true
 			$AnimatedSprite2D.play("side_walk")
 
+var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 
 
 

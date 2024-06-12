@@ -1,8 +1,10 @@
+AnimationPlayer
+ColorRect
+Timer
 Button
 RichTextLabel
 NinePatchRect
 Control
-Timer
 CollisionShape2D
 Area2D
 AnimatedSprite2D
@@ -10,6 +12,3 @@ CharacterBody2D
 Sprite2D
 CanvasLayer
 Node
-TileMap
-CollisionPolygon2D
-Polygon2D

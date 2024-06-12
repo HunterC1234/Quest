@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://blj2mhdildk36"]
+[gd_scene load_steps=3 format=3 uid="uid://blj2mhdildk36"]
 
 [ext_resource type="Script" path="res://scripts/TitleScreen.gd" id="1_6sgtw"]
+[ext_resource type="PackedScene" uid="uid://h77g2aun38u2" path="res://scenes/fade_transition.tscn" id="2_vb6l7"]
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -14,29 +15,35 @@ script = ExtResource("1_6sgtw")
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.506
-anchor_top = 0.6
-anchor_right = 0.506
-anchor_bottom = 0.6
-offset_left = -71.912
-offset_top = -21.8
-offset_right = 71.088
-offset_bottom = 22.2
+anchor_left = 0.5
+anchor_top = 0.414
+anchor_right = 0.5
+anchor_bottom = 0.414
+offset_left = -95.0
+offset_top = -42.272
+offset_right = 95.0
+offset_bottom = 41.728
 text = "START"
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.507
-anchor_top = 0.809
-anchor_right = 0.507
-anchor_bottom = 0.809
-offset_left = -73.064
-offset_top = -20.232
-offset_right = 69.936
-offset_bottom = 19.768
+anchor_left = 0.5
+anchor_top = 0.608
+anchor_right = 0.5
+anchor_bottom = 0.608
+offset_left = -95.0
+offset_top = -41.984
+offset_right = 95.0
+offset_bottom = 42.016
 text = "QUIT"
+
+[node name="fade_transition" parent="." instance=ExtResource("2_vb6l7")]
+visible = false
+layout_mode = 0
+
+[node name="Fade_timer" type="Timer" parent="fade_transition"]
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="timeout" from="fade_transition/Fade_timer" to="." method="_on_fade_timer_timeout"]
