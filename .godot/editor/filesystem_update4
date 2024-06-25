@@ -4,5 +4,5 @@ res://scenes/pet.tscn
 res://scenes/old_man.tscn
 res://scenes/title_screen.tscn
 res://scenes/fade_transition.tscn
-res://scripts/TitleScreen.gd
+res://scripts/player.gd
 res://scenes/world.gd
