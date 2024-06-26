@@ -1,7 +1,8 @@
-[gd_scene load_steps=35 format=3 uid="uid://dgjffilasq7bs"]
+[gd_scene load_steps=37 format=3 uid="uid://dgjffilasq7bs"]
 
 [ext_resource type="Script" path="res://scripts/old_man.gd" id="1_aea5b"]
 [ext_resource type="Texture2D" uid="uid://d3oh6fwincqun" path="res://Assets/sprites/characters/Adam_16x16.png" id="2_w0x4m"]
+[ext_resource type="PackedScene" uid="uid://dpk6w220286wg" path="res://scenes/dialogue.tscn" id="3_5hsvr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r11e4"]
 atlas = ExtResource("2_w0x4m")
@@ -242,7 +243,10 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_onx6p"]
-radius = 7.0
+radius = 5.38516
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f8lxx"]
+radius = 30.1496
 
 [node name="Old Man" type="CharacterBody2D"]
 position = Vector2(2052, 754)
@@ -254,10 +258,25 @@ animation = &"idle"
 frame_progress = 0.322516
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 12)
+position = Vector2(0, 10)
 shape = SubResource("CircleShape2D_onx6p")
+
+[node name="Chat_detection_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chat_detection_area"]
+position = Vector2(0, 9)
+shape = SubResource("CircleShape2D_f8lxx")
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
+[node name="Dialogue" parent="." instance=ExtResource("3_5hsvr")]
+offset_left = 75.0
+offset_top = 21.0
+offset_right = 115.0
+offset_bottom = 61.0
+
+[connection signal="body_entered" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
+[connection signal="body_exited" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="dialogue_finished" from="Dialogue" to="." method="_on_dialogue_dialogue_finished"]

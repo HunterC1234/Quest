@@ -1,12 +1,12 @@
+Control
+CollisionShape2D
+Area2D
+RichTextLabel
+NinePatchRect
 AnimationPlayer
 ColorRect
 Timer
 Button
-RichTextLabel
-NinePatchRect
-Control
-CollisionShape2D
-Area2D
 AnimatedSprite2D
 CharacterBody2D
 Sprite2D
