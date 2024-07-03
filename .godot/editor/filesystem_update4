@@ -4,9 +4,5 @@ res://scenes/pet.tscn
 res://scenes/old_man.tscn
 res://scenes/title_screen.tscn
 res://scenes/fade_transition.tscn
-res://Assets/sprites/other/dialogueplayer.gd
-res://scripts/old_man.gd
-res://scenes/dialogue.gd
 res://scenes/dialogue.tscn
-res://Dialogue/dialogue.json
-res://scenes/dialogueplayer.gd
+res://scenes/npc_quest.tscn

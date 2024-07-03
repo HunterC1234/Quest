@@ -249,7 +249,7 @@ radius = 5.38516
 radius = 30.1496
 
 [node name="Old Man" type="CharacterBody2D"]
-position = Vector2(2052, 754)
+position = Vector2(1, -11)
 script = ExtResource("1_aea5b")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -275,6 +275,7 @@ offset_left = 75.0
 offset_top = 21.0
 offset_right = 115.0
 offset_bottom = 61.0
+metadata/_edit_use_anchors_ = true
 
 [connection signal="body_entered" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
 [connection signal="body_exited" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]

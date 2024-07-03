@@ -9,6 +9,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="quest1_ui" type="NinePatchRect" parent="."]
+layout_mode = 0
 offset_left = -63.0
 offset_top = -65.0
 offset_right = 89.0
