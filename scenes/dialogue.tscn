@@ -11,33 +11,49 @@ offset_bottom = 40.0
 script = ExtResource("1_4n5u3")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
+show_behind_parent = true
 layout_mode = 0
-offset_left = -63.0
-offset_top = -65.0
-offset_right = 89.0
-offset_bottom = -25.0
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 153.0
+offset_bottom = 37.0
 texture = ExtResource("2_8kgva")
 patch_margin_left = 4
 patch_margin_top = 4
 patch_margin_right = 4
 patch_margin_bottom = 4
-metadata/_edit_group_ = true
 
 [node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+modulate = Color(0, 0, 0, 1)
+top_level = true
 layout_mode = 0
 offset_left = 11.0
 offset_top = 1.0
+<<<<<<< Updated upstream
 offset_right = 358.0
 offset_bottom = 29.0
+=======
+offset_right = 163.0
+offset_bottom = 41.0
+>>>>>>> Stashed changes
 scale = Vector2(0.4, 0.4)
 text = "Name"
 
 [node name="Text" type="RichTextLabel" parent="NinePatchRect"]
+modulate = Color(0, 0, 0, 1)
+top_level = true
 layout_mode = 0
+<<<<<<< Updated upstream
 offset_left = 19.0
 offset_top = 8.0
 offset_right = 336.0
 offset_bottom = 73.0
+=======
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 171.0
+offset_bottom = 50.0
+>>>>>>> Stashed changes
 scale = Vector2(0.4, 0.4)
 text = "Chatting...
 "

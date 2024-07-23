@@ -242,8 +242,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_onx6p"]
-radius = 5.38516
+[sub_resource type="CircleShape2D" id="CircleShape2D_wuscp"]
+radius = 6.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f8lxx"]
 radius = 30.1496
@@ -258,24 +258,31 @@ animation = &"idle"
 frame_progress = 0.322516
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 10)
-shape = SubResource("CircleShape2D_onx6p")
+position = Vector2(0, 11)
+shape = SubResource("CircleShape2D_wuscp")
 
 [node name="Chat_detection_area" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Chat_detection_area"]
-position = Vector2(0, 9)
+position = Vector2(0, 5)
 shape = SubResource("CircleShape2D_f8lxx")
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
 [node name="Dialogue" parent="." instance=ExtResource("3_5hsvr")]
+<<<<<<< Updated upstream
 offset_left = 75.0
 offset_top = 21.0
 offset_right = 115.0
 offset_bottom = 61.0
 metadata/_edit_use_anchors_ = true
+=======
+offset_left = 12.0
+offset_top = -45.0
+offset_right = 52.0
+offset_bottom = -5.0
+>>>>>>> Stashed changes
 
 [connection signal="body_entered" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
 [connection signal="body_exited" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]

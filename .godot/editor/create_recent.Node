@@ -1,13 +1,17 @@
 CollisionPolygon2D
+<<<<<<< Updated upstream
 Control
+=======
+>>>>>>> Stashed changes
 CollisionShape2D
+Button
+Control
 Area2D
 RichTextLabel
 NinePatchRect
 AnimationPlayer
 ColorRect
 Timer
-Button
 AnimatedSprite2D
 CharacterBody2D
 Sprite2D
