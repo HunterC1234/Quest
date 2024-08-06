@@ -1,9 +1,5 @@
 98a70190bc03ec62debef81a9418c486
-<<<<<<< Updated upstream
 ::res://::1719967529
-=======
-::res://::1719967323
->>>>>>> Stashed changes
 icon.svg::CompressedTexture2D::1109556976184656759::1718234281::1718234281::1::::<><>::
 README.md::TextFile::-1::1715811846::0::1::::<><>::
 ::res://addons/::1718666373
@@ -136,18 +132,12 @@ wooden.png::CompressedTexture2D::541437908050116511::1718234281::1718234281::1::
 walls.png::CompressedTexture2D::3599988970689595439::1718234281::1718234281::1::::<><>::
 wooden_door.png::CompressedTexture2D::6994630025324413487::1718234281::1718234281::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::4075949827093003156::1718234281::1718234281::1::::<><>::
-<<<<<<< Updated upstream
 ::res://Dialogue/::1719967407
 dialogue.json::JSON::-1::1719967407::0::1::::<><>::
-=======
-::res://Dialogue/::1719966851
-dialogue.json::JSON::-1::1719966851::0::1::::<><>::
->>>>>>> Stashed changes
 dialogue.tscn::PackedScene::2352361231600582188::1719441617::0::1::::<><>::res://Assets/sprites/other/dialogueplayer.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png
 dialogueplayer.gd::GDScript::-1::1719441378::0::1::::<>RefCounted<>::
 dialogue_box.png::CompressedTexture2D::7490163475584106277::1719354189::1719441617::1::::<><>::
 ::res://examples/::1718757069
-<<<<<<< Updated upstream
 ::res://scenes/::1719967408
 dialogue.gd::GDScript::-1::1719442403::0::1::::<>RefCounted<>::
 dialogue.tscn::PackedScene::8234661458445528198::1719967407::0::1::::<><>::res://scenes/dialogueplayer.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png
@@ -161,22 +151,6 @@ title_screen.tscn::PackedScene::3178738524505726343::1719967324::0::1::::<><>::r
 world.gd::GDScript::-1::1719354215::0::1::::<>Node2D<>::
 world.tscn::PackedScene::2104324843554144621::1719967408::0::1::::<><>::res://scenes/world.gd<>uid://b7cx3lnghcl3x::::res://Assets/sprites/tilesets/grass.png<>uid://chv28vxm1weiw::::res://Assets/sprites/objects/Serene_Village_16x16.png<>uid://cge1rifgqro5p::::res://Assets/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://scenes/pet.tscn<>uid://d3oh6fwincqun::::res://Assets/sprites/characters/Adam_16x16.png<>uid://0exgg8magr8g::::res://Assets/sprites/Animated stuff/campfire_16x16.png<>uid://c0t7mvjbnw52h::::res://Assets/sprites/characters/Alex_16x16.png<>uid://bm3mdiga6riww::::res://Assets/sprites/Animated stuff/water_waves_16x16.png<>uid://dgjffilasq7bs::::res://scenes/old_man.tscn
 ::res://scripts/::1719967408
-=======
-::res://scenes/::1719967276
-dialogue.gd::GDScript::-1::1719442403::0::1::::<>RefCounted<>::
-dialogue.tscn::PackedScene::8234661458445528198::1719967276::0::1::::<><>::res://scenes/dialogueplayer.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png
-dialogueplayer.gd::GDScript::-1::1719444573::0::1::::<>Control<>::
-fade_transition.tscn::PackedScene::559337071185769847::1719967236::0::1::::<><>::
-npc_quest.gd::GDScript::-1::1719877087::0::1::::<>Control<>::
-npc_quest.tscn::PackedScene::1551988861923069821::1719967236::0::1::::<><>::res://scenes/npc_quest.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png
-old_man.tscn::PackedScene::7599287463831761940::1719967263::0::1::::<><>::res://scripts/old_man.gd<>uid://d3oh6fwincqun::::res://Assets/sprites/characters/Adam_16x16.png<>uid://dpk6w220286wg::::res://scenes/dialogue.tscn
-pet.tscn::PackedScene::4402414340722005186::1719967236::0::1::::<><>::res://scripts/pet.gd<>uid://blvtpmlnvubu0::::res://Assets/sprites/characters/slime.png
-player.tscn::PackedScene::7297936387209769774::1719967236::0::1::::<><>::res://scripts/player.gd<>uid://d0jni0jf1nmik::::res://Assets/sprites/characters/player.png
-title_screen.tscn::PackedScene::3178738524505726343::1719967236::0::1::::<><>::res://scripts/TitleScreen.gd<>uid://h77g2aun38u2::::res://scenes/fade_transition.tscn
-world.gd::GDScript::-1::1719354215::0::1::::<>Node2D<>::
-world.tscn::PackedScene::2104324843554144621::1719967236::0::1::::<><>::res://scenes/world.gd<>uid://b7cx3lnghcl3x::::res://Assets/sprites/tilesets/grass.png<>uid://chv28vxm1weiw::::res://Assets/sprites/objects/Serene_Village_16x16.png<>uid://cge1rifgqro5p::::res://Assets/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://scenes/pet.tscn<>uid://d3oh6fwincqun::::res://Assets/sprites/characters/Adam_16x16.png<>uid://0exgg8magr8g::::res://Assets/sprites/Animated stuff/campfire_16x16.png<>uid://c0t7mvjbnw52h::::res://Assets/sprites/characters/Alex_16x16.png<>uid://bm3mdiga6riww::::res://Assets/sprites/Animated stuff/water_waves_16x16.png<>uid://dgjffilasq7bs::::res://scenes/old_man.tscn
-::res://scripts/::1719967162
->>>>>>> Stashed changes
 global.gd::GDScript::-1::1718234281::0::1::::<>Node<>::
 main.dialogue::Resource::5547447121230554867::1718234281::1718234281::1::::<><>::
 old_man.gd::GDScript::-1::1719967162::0::1::::<>CharacterBody2D<>::

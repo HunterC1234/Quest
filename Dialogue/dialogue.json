@@ -1,15 +1,6 @@
 [
-<<<<<<< Updated upstream
 	{"name": "Strange Man", "text": "I need to find my sandle!"},
 	{"name": "Strange Man", "text": "I've been looking for it for years."},
 	{"name": "Strange Man", "text": "Would you be able to help me find it?"},
-=======
-	{"name": "Strange Man", "text": "I have lost my jandal."},
-	{"name": "Strange Man", "text": "I have been looking for it for years and I cannot find it."},
-	{"name": "Strange Man", "text": "Would you help me find it young man?"},
-	{"name": "You", "text": "Of course"},
-	
-	
->>>>>>> Stashed changes
 	
 ]

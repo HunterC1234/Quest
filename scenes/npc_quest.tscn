@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://wd2baps1xwrl"]
+[gd_scene load_steps=2 format=3 uid="uid://wd2baps1xwrl"]
 
-[ext_resource type="Script" path="res://scenes/npc_quest.gd" id="1_f8jo5"]
 [ext_resource type="Texture2D" uid="uid://deyj5shteqlmb" path="res://Dialogue/dialogue_box.png" id="1_fgry0"]
 
 [node name="NPC_quest" type="Control"]
@@ -8,23 +7,19 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_f8jo5")
 
 [node name="quest1_ui" type="NinePatchRect" parent="."]
 layout_mode = 0
-<<<<<<< Updated upstream
 offset_left = -63.0
-=======
-offset_left = -65.0
->>>>>>> Stashed changes
 offset_top = -65.0
-offset_right = 87.0
-offset_bottom = -21.0
+offset_right = 89.0
+offset_bottom = -25.0
 texture = ExtResource("1_fgry0")
 patch_margin_left = 4
 patch_margin_top = 4
 patch_margin_right = 4
 patch_margin_bottom = 4
+metadata/_edit_group_ = true
 
 [node name="Name" type="RichTextLabel" parent="quest1_ui"]
 layout_mode = 0
@@ -33,107 +28,14 @@ offset_top = 1.0
 offset_right = 162.0
 offset_bottom = 41.0
 scale = Vector2(0.4, 0.4)
-text = "Old Man:"
+text = "Name"
 
 [node name="Text" type="RichTextLabel" parent="quest1_ui"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 8.0
-offset_right = 336.0
-offset_bottom = 78.0
+offset_right = 170.0
+offset_bottom = 48.0
 scale = Vector2(0.4, 0.4)
-text = "Could you find me my robe?
+text = "Chatting...
 "
-
-[node name="yes_button" type="Button" parent="quest1_ui"]
-self_modulate = Color(0.184314, 0.823529, 0.513726, 1)
-layout_mode = 0
-offset_left = 71.0
-offset_top = 24.0
-offset_right = 105.0
-offset_bottom = 55.0
-scale = Vector2(0.39, 0.39)
-text = "yes"
-
-[node name="no_button" type="Button" parent="quest1_ui"]
-self_modulate = Color(1, 0, 0.0431373, 1)
-layout_mode = 0
-offset_left = 97.0
-offset_top = 24.0
-offset_right = 131.0
-offset_bottom = 55.0
-scale = Vector2(0.39, 0.39)
-text = "no"
-
-[node name="no_quest" type="NinePatchRect" parent="."]
-visible = false
-layout_mode = 0
-offset_left = -66.0
-offset_top = -68.0
-offset_right = 86.0
-offset_bottom = -24.0
-texture = ExtResource("1_fgry0")
-patch_margin_left = 4
-patch_margin_top = 4
-patch_margin_right = 4
-patch_margin_bottom = 4
-metadata/_edit_group_ = true
-
-[node name="Name" type="RichTextLabel" parent="no_quest"]
-visible = false
-layout_mode = 0
-offset_left = 11.0
-offset_top = 1.0
-offset_right = 162.0
-offset_bottom = 41.0
-scale = Vector2(0.4, 0.4)
-text = "Old Man:"
-
-[node name="Text" type="RichTextLabel" parent="no_quest"]
-visible = false
-layout_mode = 0
-offset_left = 19.0
-offset_top = 8.0
-offset_right = 336.0
-offset_bottom = 78.0
-scale = Vector2(0.4, 0.4)
-text = "Please find my robe!
-"
-
-[node name="quest_finished" type="NinePatchRect" parent="."]
-visible = false
-layout_mode = 0
-offset_left = -65.0
-offset_top = -67.0
-offset_right = 87.0
-offset_bottom = -23.0
-texture = ExtResource("1_fgry0")
-patch_margin_left = 4
-patch_margin_top = 4
-patch_margin_right = 4
-patch_margin_bottom = 4
-metadata/_edit_group_ = true
-
-[node name="Name" type="RichTextLabel" parent="quest_finished"]
-visible = false
-layout_mode = 0
-offset_left = 11.0
-offset_top = 1.0
-offset_right = 162.0
-offset_bottom = 41.0
-scale = Vector2(0.4, 0.4)
-text = "Old Man:"
-
-[node name="Text" type="RichTextLabel" parent="quest_finished"]
-visible = false
-layout_mode = 0
-offset_left = 19.0
-offset_top = 8.0
-offset_right = 428.0
-offset_bottom = 99.0
-scale = Vector2(0.32, 0.32)
-text = "Thank you so much young traveller, if you would like to continue I would reccomend looking around behind my house that is where you will find the route to the next village
-"
-
-[connection signal="pressed" from="quest1_ui/yes_button" to="." method="_on_yes_button_pressed"]
-[connection signal="pressed" from="quest1_ui/no_button" to="." method="_on_no_button_pressed"]

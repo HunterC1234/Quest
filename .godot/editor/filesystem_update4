@@ -6,7 +6,4 @@ res://scenes/title_screen.tscn
 res://scenes/fade_transition.tscn
 res://scenes/dialogue.tscn
 res://scenes/npc_quest.tscn
-<<<<<<< Updated upstream
 res://Dialogue/dialogue.json
-=======
->>>>>>> Stashed changes
