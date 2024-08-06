@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bit16j6jm3we0"]
+
+[ext_resource type="Script" path="res://Sandle.gd" id="1_koi8i"]
+[ext_resource type="Texture2D" uid="uid://b7nuj0p5irpky" path="res://Assets/sprites/objects/chest_01.png" id="2_mlcr0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1y6uv"]
+radius = 8.0
+
+[node name="Sandle" type="StaticBody2D"]
+script = ExtResource("1_koi8i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_mlcr0")
+
+[node name="Interactable area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable area"]
+position = Vector2(-24, 1)
+shape = SubResource("CircleShape2D_1y6uv")
+
+[connection signal="body_entered" from="Interactable area" to="." method="_on_interactable_area_body_entered"]

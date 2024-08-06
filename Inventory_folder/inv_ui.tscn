@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq7yk1dbva1sv"]
+
+[ext_resource type="Script" path="res://Inventory_folder/InvUI.gd" id="1_hsjlc"]
+[ext_resource type="Texture2D" uid="uid://deyj5shteqlmb" path="res://Dialogue/dialogue_box.png" id="2_bbm13"]
+
+[node name="InvUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_hsjlc")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 172.0
+offset_bottom = 66.0
+texture = ExtResource("2_bbm13")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6

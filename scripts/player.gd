@@ -3,6 +3,7 @@ extends CharacterBody2D
 var speed = 100
 var current_dir = "none"
 
+@export var inv: Inv
 
 func _ready():
 	$AnimatedSprite2D.play("front_idle")

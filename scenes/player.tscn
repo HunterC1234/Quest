@@ -1,7 +1,9 @@
-[gd_scene load_steps=57 format=3 uid="uid://db8f7fv1asaty"]
+[gd_scene load_steps=59 format=3 uid="uid://db8f7fv1asaty"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_cmkfp"]
 [ext_resource type="Texture2D" uid="uid://d0jni0jf1nmik" path="res://Assets/sprites/characters/player.png" id="2_6emhs"]
+[ext_resource type="Resource" uid="uid://chdxou12e6ntm" path="res://Inventory_folder/playerinv.tres" id="2_6wexw"]
+[ext_resource type="PackedScene" uid="uid://dq7yk1dbva1sv" path="res://Inventory_folder/inv_ui.tscn" id="4_bartw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0fa84"]
 atlas = ExtResource("2_6emhs")
@@ -422,6 +424,7 @@ radius = 64.1249
 [node name="player" type="CharacterBody2D"]
 collision_layer = 3
 script = ExtResource("1_cmkfp")
+inv = ExtResource("2_6wexw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -3)
@@ -447,6 +450,8 @@ shape = SubResource("CircleShape2D_dml71")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
 position = Vector2(1, -7)
 shape = SubResource("CircleShape2D_n0oee")
+
+[node name="InvUI" parent="." instance=ExtResource("4_bartw")]
 
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
