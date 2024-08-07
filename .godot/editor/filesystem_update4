@@ -6,3 +6,5 @@ res://scenes/title_screen.tscn
 res://scenes/fade_transition.tscn
 res://scenes/dialogue.tscn
 res://scenes/npc_quest.tscn
+res://scripts/TitleScreen.gd
+res://scripts/player.gd

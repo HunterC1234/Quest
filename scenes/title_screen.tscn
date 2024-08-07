@@ -8,6 +8,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 3.0
+offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_6sgtw")
@@ -16,27 +20,41 @@ script = ExtResource("1_6sgtw")
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.414
+anchor_top = 0.449
 anchor_right = 0.5
-anchor_bottom = 0.414
+anchor_bottom = 0.449
 offset_left = -95.0
-offset_top = -42.272
-offset_right = 95.0
-offset_bottom = 41.728
+offset_top = -41.952
+offset_right = 96.0
+offset_bottom = 42.048
 text = "START"
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.608
-anchor_right = 0.5
-anchor_bottom = 0.608
-offset_left = -95.0
-offset_top = -41.984
-offset_right = 95.0
-offset_bottom = 42.016
+anchor_left = 0.502
+anchor_top = 0.739
+anchor_right = 0.502
+anchor_bottom = 0.739
+offset_left = -96.304
+offset_top = -41.872
+offset_right = 94.696
+offset_bottom = 42.128
 text = "QUIT"
+
+[node name="options" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.501
+anchor_top = 0.593
+anchor_right = 0.501
+anchor_bottom = 0.593
+offset_left = -95.1521
+offset_top = -42.264
+offset_right = 94.8479
+offset_bottom = 41.736
+scale = Vector2(1.00476, 1)
+text = "OPTIONS"
 
 [node name="fade_transition" parent="." instance=ExtResource("2_vb6l7")]
 visible = false
@@ -46,4 +64,5 @@ layout_mode = 0
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="options" to="." method="_on_start_button_pressed"]
 [connection signal="timeout" from="fade_transition/Fade_timer" to="." method="_on_fade_timer_timeout"]

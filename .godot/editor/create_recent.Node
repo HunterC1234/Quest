@@ -1,3 +1,4 @@
+Button
 CollisionPolygon2D
 Control
 CollisionShape2D
@@ -7,7 +8,6 @@ NinePatchRect
 AnimationPlayer
 ColorRect
 Timer
-Button
 AnimatedSprite2D
 CharacterBody2D
 Sprite2D

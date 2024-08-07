@@ -13,9 +13,12 @@ func _physics_process(delta):
 
 func _player_movement(_delta):
 	
-	if Input.is_action_pressed("ui_left"):
-		speed = 150
+	if Input.is_action_just_pressed("sprint "):
+		speed = 130
 		print("running")
+	if Input.is_action_just_released("sprint "):
+		speed = 100
+		
 
 	if Input.is_action_pressed("ui_right"):
 		current_dir = "right"
