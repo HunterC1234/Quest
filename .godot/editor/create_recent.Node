@@ -1,4 +1,7 @@
 Button
+Sprite2D
+GridContainer
+Panel
 CollisionPolygon2D
 Control
 CollisionShape2D
@@ -9,6 +12,3 @@ AnimationPlayer
 ColorRect
 Timer
 AnimatedSprite2D
-CharacterBody2D
-Sprite2D
-CanvasLayer
