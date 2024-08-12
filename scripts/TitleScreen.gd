@@ -2,6 +2,10 @@ extends Control
 
 var button_type = null
 
+func _ready():
+	$opening/AnimationPlayer.play("opening")
+	print("opened")
+	
 
 func _on_start_button_pressed():
 	button_type = "start"

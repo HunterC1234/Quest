@@ -1,5 +1,7 @@
-Button
+AnimationPlayer
+ColorRect
 TextureRect
+Button
 Sprite2D
 GridContainer
 Panel
@@ -9,6 +11,4 @@ CollisionShape2D
 Area2D
 RichTextLabel
 NinePatchRect
-AnimationPlayer
-ColorRect
 Timer
