@@ -1,21 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://bit16j6jm3we0"]
+[gd_scene load_steps=5 format=3 uid="uid://bit16j6jm3we0"]
 
-[ext_resource type="Script" path="res://Sandle.gd" id="1_koi8i"]
-[ext_resource type="Texture2D" uid="uid://b7nuj0p5irpky" path="res://Assets/sprites/objects/chest_01.png" id="2_mlcr0"]
+[ext_resource type="Script" path="res://stick.gd" id="1_ihw54"]
+[ext_resource type="Texture2D" uid="uid://p2qig6v13x3d" path="res://icon.svg" id="2_30hd1"]
+[ext_resource type="Resource" uid="uid://bxi3qx5iu1dfu" path="res://Inventory_folder/items/sandle.tres" id="2_j4fvw"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_1y6uv"]
-radius = 8.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_scxgy"]
+radius = 29.0172
 
-[node name="Sandle" type="StaticBody2D"]
-script = ExtResource("1_koi8i")
+[node name="sandle" type="StaticBody2D"]
+script = ExtResource("1_ihw54")
+item = ExtResource("2_j4fvw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_mlcr0")
+texture = ExtResource("2_30hd1")
 
-[node name="Interactable area" type="Area2D" parent="."]
+[node name="interactable area" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable area"]
-position = Vector2(-24, 1)
-shape = SubResource("CircleShape2D_1y6uv")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable area"]
+shape = SubResource("CircleShape2D_scxgy")
 
-[connection signal="body_entered" from="Interactable area" to="." method="_on_interactable_area_body_entered"]
+[connection signal="body_entered" from="interactable area" to="." method="_on_interactable_area_body_entered"]
