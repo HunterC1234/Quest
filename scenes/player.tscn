@@ -452,7 +452,6 @@ position = Vector2(0, -6)
 shape = SubResource("CircleShape2D_n0oee")
 
 [node name="InvUI" parent="." instance=ExtResource("4_bartw")]
-visible = false
 offset_left = -45.0
 offset_top = -101.0
 offset_right = 45.0

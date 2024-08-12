@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 AnimationPlayer
 ColorRect
 TextureRect
@@ -7,8 +8,23 @@ GridContainer
 Panel
 CollisionPolygon2D
 Control
+=======
+>>>>>>> 99f9f84fee86d23fc3042c48c0615969905e0187
 CollisionShape2D
 Area2D
+Sprite2D
+StaticBody2D
+Label
+Panel
+CenterContainer
+GridContainer
+CollisionPolygon2D
+Control
 RichTextLabel
 NinePatchRect
+<<<<<<< HEAD
 Timer
+=======
+AnimationPlayer
+ColorRect
+>>>>>>> 99f9f84fee86d23fc3042c48c0615969905e0187
