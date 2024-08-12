@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://hl1y5qk58wor"]
+
+[ext_resource type="Texture2D" uid="uid://p2qig6v13x3d" path="res://icon.svg" id="1_4d4lq"]
+[ext_resource type="Script" path="res://options.gd" id="1_c350y"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c350y")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.493
+anchor_top = 0.46
+anchor_right = 0.493
+anchor_bottom = 0.46
+offset_left = -102.936
+offset_top = -99.08
+offset_right = 103.064
+offset_bottom = 128.92
+texture = ExtResource("1_4d4lq")

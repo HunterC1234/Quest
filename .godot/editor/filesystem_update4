@@ -6,9 +6,5 @@ res://scenes/title_screen.tscn
 res://scenes/fade_transition.tscn
 res://scenes/dialogue.tscn
 res://scenes/npc_quest.tscn
+res://options.tscn
 res://scripts/TitleScreen.gd
-res://scripts/player.gd
-res://Inventory_folder/inv_ui.tscn
-res://Inventory_folder/inv_ui_slot.tscn
-res://Inventory_folder/InvUI.gd
-res://Inventory_folder/inv_ui_slot.gd

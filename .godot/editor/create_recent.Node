@@ -1,4 +1,5 @@
 Button
+TextureRect
 Sprite2D
 GridContainer
 Panel
@@ -11,4 +12,3 @@ NinePatchRect
 AnimationPlayer
 ColorRect
 Timer
-AnimatedSprite2D
