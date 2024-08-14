@@ -1,28 +1,10 @@
 res://scenes/world.tscn
+res://Inventory_folder/playerinv.tres
+res://scripts/player.gd
+res://Inventory_folder/items/sandle.tres
 res://scenes/player.tscn
 res://scenes/pet.tscn
 res://scenes/old_man.tscn
-<<<<<<< HEAD
-res://scenes/title_screen.tscn
-res://scenes/fade_transition.tscn
-res://scenes/dialogue.tscn
-res://scenes/npc_quest.tscn
-res://options.tscn
-res://scripts/TitleScreen.gd
-=======
 res://Inventory_folder/inv_ui.tscn
 res://Inventory_folder/inv_ui_slot.tscn
-res://Sandle.gd
-res://Inventory_folder/inv_ui_slot.gd
-res://Inventory_folder/inventory_item.gd
-res://Inventory_folder/items/sandle.tres
-res://Inventory_folder/playerinv.tres
-res://scripts/player.gd
-res://Inventory_folder/items/sandle_test.tres
-res://inventory.gd
-res://Inventory_folder/InvUI.gd
-res://Inv_slot.gd
-res://Inventory_folder/inventory.gd
-res://stick.gd
 res://scenes/sandle.tscn
->>>>>>> 99f9f84fee86d23fc3042c48c0615969905e0187

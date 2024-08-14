@@ -1,4 +1,5 @@
 98a70190bc03ec62debef81a9418c486
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 ::res://::1723503313
 icon.svg::CompressedTexture2D::1109556976184656759::1719353311::1719353311::1::::<><>::
@@ -168,11 +169,14 @@ player.gd::GDScript::-1::1723501321::0::1::::<>CharacterBody2D<>::
 TitleScreen.gd::GDScript::-1::1723503252::0::1::::<>Control<>::
 =======
 ::res://::1723503275
+=======
+::res://::1723595078
+>>>>>>> Stashed changes
 icon.svg::CompressedTexture2D::1109556976184656759::1719968621::1719968621::1::::<><>::
-inventory.gd::GDScript::-1::1723503275::0::1::::Inv<>Resource<>::
-README.md::TextFile::-1::1719968621::0::1::::<><>::
 Inv_slot.gd::GDScript::-1::1723503184::0::1::::InvSlot<>Resource<>::
+README.md::TextFile::-1::1719968621::0::1::::<><>::
 Sandle.gd::GDScript::-1::1723071413::0::1::::<>StaticBody2D<>::
+stick.gd::GDScript::-1::1723505768::0::1::::<>StaticBody2D<>::
 ::res://addons/::1719968621
 ::res://addons/dialogue_manager/::1719968621
 constants.gd::GDScript::-1::1719968621::0::1::::<>Node<>::
@@ -302,35 +306,35 @@ dialogue.json::JSON::-1::1719968621::0::1::::<><>::
 dialogue.tscn::PackedScene::2352361231600582188::1719968621::0::1::::<><>::res://Assets/sprites/other/dialogueplayer.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png
 dialogueplayer.gd::GDScript::-1::1719968621::0::1::::<>RefCounted<>::
 dialogue_box.png::CompressedTexture2D::7490163475584106277::1719968621::1719968621::1::::<><>::
-::res://Inventory_folder/::1723503379
+::res://Inventory_folder/::1723505877
+inventory.gd::GDScript::-1::1723504385::0::1::::Inv<>Resource<>::
 inventory_item.gd::GDScript::-1::1723502358::0::1::::InvItem<>Resource<>::
-InvUI.gd::GDScript::-1::1723502358::0::1::::<>Control<>::
-inv_ui.tscn::PackedScene::8349820073498224401::1723502512::0::1::::<><>::res://Inventory_folder/InvUI.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png<>uid://bwklavvd7ja4t::::res://Inventory_folder/inv_ui_slot.tscn
-inv_ui_slot.gd::GDScript::-1::1723503275::0::1::::<>Panel<>::
-inv_ui_slot.tscn::PackedScene::3951888043801511893::1723503379::0::1::::<><>::res://Inventory_folder/inv_ui_slot.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png
-playerinv.tres::Resource/Inv::5271778989928158942::1723503379::0::1::::<><>::res://inventory.gd<>res://Inv_slot.gd
-::res://Inventory_folder/items/::1723502358
-sandle_test.tres::Resource/InvItem::6548077886430065693::1723502358::0::1::::<><>::res://Inventory_folder/inventory_item.gd<>uid://p2qig6v13x3d::::res://icon.svg
+InvUI.gd::GDScript::-1::1723504790::0::1::::<>Control<>::
+inv_ui.tscn::PackedScene::8349820073498224401::1723505877::0::1::::<><>::res://Inventory_folder/InvUI.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png<>uid://bwklavvd7ja4t::::res://Inventory_folder/inv_ui_slot.tscn
+inv_ui_slot.gd::GDScript::-1::1723504790::0::1::::<>Panel<>::
+inv_ui_slot.tscn::PackedScene::3951888043801511893::1723505877::0::1::::<><>::res://Inventory_folder/inv_ui_slot.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png
+playerinv.tres::Resource/Inv::5271778989928158942::1723503402::0::1::::<><>::res://Inventory_folder/inventory.gd<>res://Inv_slot.gd
+::res://Inventory_folder/items/::1723505174
 sandle.tres::Resource/InvItem::4019009012672684890::1723502358::0::1::::<><>::res://Inventory_folder/inventory_item.gd<>uid://p2qig6v13x3d::::res://icon.svg
-::res://scenes/::1723502512
+::res://scenes/::1723505877
 dialogue.gd::GDScript::-1::1719968621::0::1::::<>RefCounted<>::
 dialogue.tscn::PackedScene::8234661458445528198::1723069363::0::1::::<><>::res://scenes/dialogueplayer.gd<>uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png
 dialogueplayer.gd::GDScript::-1::1721862472::0::1::::<>Control<>::
 fade_transition.tscn::PackedScene::559337071185769847::1723069363::0::1::::<><>::
 npc_quest.gd::GDScript::-1::1722294117::0::1::::<>Control<>::
 npc_quest.tscn::PackedScene::1551988861923069821::1723069363::0::1::::<><>::uid://deyj5shteqlmb::::res://Dialogue/dialogue_box.png<>res://scenes/npc_quest.gd
-old_man.tscn::PackedScene::7599287463831761940::1723502512::0::1::::<><>::res://scripts/old_man.gd<>uid://d3oh6fwincqun::::res://Assets/sprites/characters/Adam_16x16.png<>uid://dpk6w220286wg::::res://scenes/dialogue.tscn<>uid://wd2baps1xwrl::::res://scenes/npc_quest.tscn
-pet.tscn::PackedScene::4402414340722005186::1723502511::0::1::::<><>::res://scripts/pet.gd<>uid://blvtpmlnvubu0::::res://Assets/sprites/characters/slime.png
-player.tscn::PackedScene::7297936387209769774::1723502511::0::1::::<><>::res://scripts/player.gd<>uid://d0jni0jf1nmik::::res://Assets/sprites/characters/player.png<>uid://chdxou12e6ntm::::res://Inventory_folder/playerinv.tres<>uid://dq7yk1dbva1sv::::res://Inventory_folder/inv_ui.tscn
-sandle.tscn::PackedScene::2988789132572644857::1722294188::0::1::::<><>::res://Sandle.gd<>uid://b7nuj0p5irpky::::res://Assets/sprites/objects/chest_01.png
+old_man.tscn::PackedScene::7599287463831761940::1723505877::0::1::::<><>::res://scripts/old_man.gd<>uid://d3oh6fwincqun::::res://Assets/sprites/characters/Adam_16x16.png<>uid://dpk6w220286wg::::res://scenes/dialogue.tscn<>uid://wd2baps1xwrl::::res://scenes/npc_quest.tscn
+pet.tscn::PackedScene::4402414340722005186::1723505877::0::1::::<><>::res://scripts/pet.gd<>uid://blvtpmlnvubu0::::res://Assets/sprites/characters/slime.png
+player.tscn::PackedScene::7297936387209769774::1723505877::0::1::::<><>::res://scripts/player.gd<>uid://d0jni0jf1nmik::::res://Assets/sprites/characters/player.png<>uid://chdxou12e6ntm::::res://Inventory_folder/playerinv.tres<>uid://dq7yk1dbva1sv::::res://Inventory_folder/inv_ui.tscn
+sandle.tscn::PackedScene::2988789132572644857::1723505877::0::1::::<><>::res://stick.gd<>uid://p2qig6v13x3d::::res://icon.svg<>uid://bxi3qx5iu1dfu::::res://Inventory_folder/items/sandle.tres
 title_screen.tscn::PackedScene::3178738524505726343::1723069363::0::1::::<><>::res://scripts/TitleScreen.gd<>uid://h77g2aun38u2::::res://scenes/fade_transition.tscn
 world.gd::GDScript::-1::1719968621::0::1::::<>Node2D<>::
-world.tscn::PackedScene::2104324843554144621::1723502511::0::1::::<><>::res://scenes/world.gd<>uid://b7cx3lnghcl3x::::res://Assets/sprites/tilesets/grass.png<>uid://chv28vxm1weiw::::res://Assets/sprites/objects/Serene_Village_16x16.png<>uid://cge1rifgqro5p::::res://Assets/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://scenes/pet.tscn<>uid://d3oh6fwincqun::::res://Assets/sprites/characters/Adam_16x16.png<>uid://0exgg8magr8g::::res://Assets/sprites/Animated stuff/campfire_16x16.png<>uid://c0t7mvjbnw52h::::res://Assets/sprites/characters/Alex_16x16.png<>uid://bm3mdiga6riww::::res://Assets/sprites/Animated stuff/water_waves_16x16.png<>uid://dgjffilasq7bs::::res://scenes/old_man.tscn
-::res://scripts/::1723502458
+world.tscn::PackedScene::2104324843554144621::1723505877::0::1::::<><>::res://scenes/world.gd<>uid://b7cx3lnghcl3x::::res://Assets/sprites/tilesets/grass.png<>uid://chv28vxm1weiw::::res://Assets/sprites/objects/Serene_Village_16x16.png<>uid://cge1rifgqro5p::::res://Assets/sprites/tilesets/plains.png<>uid://db8f7fv1asaty::::res://scenes/player.tscn<>uid://b3yted4ore12u::::res://scenes/pet.tscn<>uid://d3oh6fwincqun::::res://Assets/sprites/characters/Adam_16x16.png<>uid://0exgg8magr8g::::res://Assets/sprites/Animated stuff/campfire_16x16.png<>uid://c0t7mvjbnw52h::::res://Assets/sprites/characters/Alex_16x16.png<>uid://bm3mdiga6riww::::res://Assets/sprites/Animated stuff/water_waves_16x16.png<>uid://dgjffilasq7bs::::res://scenes/old_man.tscn<>uid://bit16j6jm3we0::::res://scenes/sandle.tscn
+::res://scripts/::1723504385
 global.gd::GDScript::-1::1719968621::0::1::::<>Node<>::
 main.dialogue::Resource::5547447121230554867::1719968621::1719968621::1::::<><>::
 old_man.gd::GDScript::-1::1722294117::0::1::::<>CharacterBody2D<>::
 pet.gd::GDScript::-1::1719968621::0::1::::<>CharacterBody2D<>::
-player.gd::GDScript::-1::1723502458::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1723504385::0::1::::<>CharacterBody2D<>::
 TitleScreen.gd::GDScript::-1::1719968621::0::1::::<>Control<>::
 >>>>>>> 99f9f84fee86d23fc3042c48c0615969905e0187
