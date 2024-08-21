@@ -1,30 +1,14 @@
-<<<<<<< HEAD
 AnimationPlayer
+AnimatedSprite2D
+Sprite2D
+StaticBody2D
+Marker2D
+Timer
+CollisionShape2D
+Area2D
+Node2D
 ColorRect
 TextureRect
 Button
-Sprite2D
 GridContainer
 Panel
-CollisionPolygon2D
-Control
-=======
->>>>>>> 99f9f84fee86d23fc3042c48c0615969905e0187
-CollisionShape2D
-Area2D
-Sprite2D
-StaticBody2D
-Label
-Panel
-CenterContainer
-GridContainer
-CollisionPolygon2D
-Control
-RichTextLabel
-NinePatchRect
-<<<<<<< HEAD
-Timer
-=======
-AnimationPlayer
-ColorRect
->>>>>>> 99f9f84fee86d23fc3042c48c0615969905e0187

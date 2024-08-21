@@ -4,10 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://p2qig6v13x3d" path="res://icon.svg" id="2_30hd1"]
 [ext_resource type="Resource" uid="uid://bxi3qx5iu1dfu" path="res://Inventory_folder/items/sandle.tres" id="2_j4fvw"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_scxgy"]
-radius = 29.0172
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5vlcm"]
+radius = 7.0
+height = 26.0
 
-[node name="sandle" type="StaticBody2D"]
+[node name="sandle_collectable" type="StaticBody2D"]
 script = ExtResource("1_ihw54")
 item = ExtResource("2_j4fvw")
 
@@ -17,6 +18,7 @@ texture = ExtResource("2_30hd1")
 [node name="interactable area" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interactable area"]
-shape = SubResource("CircleShape2D_scxgy")
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_5vlcm")
 
 [connection signal="body_entered" from="interactable area" to="." method="_on_interactable_area_body_entered"]

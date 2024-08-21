@@ -46,17 +46,24 @@ func _process(delta):
 			MOVE:
 				move(delta)
 	if Input.is_action_just_pressed("chat"):
-		$Dialogue.start()
-		is_roaming = false
-		is_chatting = true
-		$AnimatedSprite2D.play("idle")
+		if player_in_chat_zone:
+			$Dialogue.start()
+			is_roaming = false
+			is_chatting = true
+			$AnimatedSprite2D.play("idle")
 	if Input.is_action_just_pressed("quest"):
-		print("quest has started")
-		$npc_quest.next_quest()
-		is_roaming = false
-		is_chatting = true
-		$AnimatedSprite2D.play("idle")
+		if player_in_chat_zone:
+			print("quest has started")
+			$NPC_quest.next_quest()
+			is_roaming = false
+			is_chatting = true
+			$AnimatedSprite2D.play("idle")
 			
+func check():
+	if Input.is_action_just_pressed("quest"):
+		if player_in_chat_zone:
+			pass
+	
 func choose(array):
 	array.shuffle()
 	return array.front()
@@ -92,3 +99,7 @@ func _on_dialogue_dialogue_finished():
 func _on_npc_quest_quest_menu_closed():
 	is_chatting = false
 	is_roaming = true
+
+
+func _on_player_sandle_collected():
+	$NPC_quest.sandle_collected()

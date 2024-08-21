@@ -1,6 +1,8 @@
 res://scenes/world.tscn
-res://Inventory_folder/playerinv.tres
+res://scenes/apple_collectable.gd
 res://scripts/player.gd
+res://Tree.gd
+res://Inventory_folder/playerinv.tres
 res://Inventory_folder/items/sandle.tres
 res://scenes/player.tscn
 res://scenes/pet.tscn
@@ -8,3 +10,9 @@ res://scenes/old_man.tscn
 res://Inventory_folder/inv_ui.tscn
 res://Inventory_folder/inv_ui_slot.tscn
 res://scenes/sandle.tscn
+res://scenes/tree.tscn
+res://scenes/apple_collectable.tscn
+res://scenes/npc_quest.tscn
+res://scripts/old_man.gd
+res://scenes/npc_quest.gd
+res://scenes/dialogue.tscn

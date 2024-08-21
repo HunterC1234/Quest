@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+signal sandle_collected
+
 var speed = 100
 var current_dir = "none"
 
@@ -79,5 +81,11 @@ func play_anim(movement):
 			
 func collect(item):
 	inv.insert(item)
+	print("picked up stick")
+	emit_signal("sandle_collected")
+	
+	
+func player():
+	pass
 	
 

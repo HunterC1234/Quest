@@ -279,7 +279,6 @@ offset_bottom = 61.0
 metadata/_edit_use_anchors_ = true
 
 [node name="NPC_quest" parent="." instance=ExtResource("4_qwboj")]
-visible = false
 
 [connection signal="body_entered" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
 [connection signal="body_exited" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]

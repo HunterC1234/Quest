@@ -11,6 +11,7 @@ offset_bottom = 40.0
 script = ExtResource("1_pnwpd")
 
 [node name="quest1_ui" type="NinePatchRect" parent="."]
+visible = false
 layout_mode = 0
 offset_left = -63.0
 offset_top = -65.0
@@ -86,15 +87,16 @@ text = "Old Man:"
 
 [node name="Text" type="RichTextLabel" parent="quest1_finished"]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 11.0
-offset_right = 336.0
-offset_bottom = 51.0
+offset_left = 13.0
+offset_top = 13.0
+offset_right = 350.0
+offset_bottom = 120.0
 scale = Vector2(0.4, 0.4)
 text = "Thank you so much for finding my sandle!!
 "
 
 [node name="no_quest" type="NinePatchRect" parent="."]
+visible = false
 layout_mode = 0
 offset_left = -63.0
 offset_top = -65.0
@@ -120,9 +122,9 @@ layout_mode = 0
 offset_left = 19.0
 offset_top = 11.0
 offset_right = 336.0
-offset_bottom = 51.0
+offset_bottom = 63.0
 scale = Vector2(0.4, 0.4)
-text = "Would you be able to find my sandle?
+text = "Thank you for finding my sandle, head north to find the next city!
 "
 
 [connection signal="pressed" from="quest1_ui/no_button1" to="." method="_on_no_button_1_pressed"]
