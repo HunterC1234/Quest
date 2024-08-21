@@ -44,7 +44,11 @@ func _on_yes_button_1_pressed():
 	$quest1_active.visible = false
 	sandle = 0
 	emit_signal("quest_menu_closed")
+<<<<<<< HEAD
 	
+=======
+	$AudioStreamPlayer.play()
+>>>>>>> 8451701eed52c14cbf30aa51c3df27af1621a685
 
 
 func _on_no_button_1_pressed():
