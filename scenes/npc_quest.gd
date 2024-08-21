@@ -37,6 +37,7 @@ func _on_yes_button_1_pressed():
 	quest1_active = true
 	sandle = 0
 	emit_signal("quest_menu_closed")
+	$AudioStreamPlayer.play()
 
 
 func _on_no_button_1_pressed():

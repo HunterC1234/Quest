@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://48l6mw5fcyk0"]
+[gd_scene load_steps=26 format=3 uid="uid://48l6mw5fcyk0"]
 
 [ext_resource type="Script" path="res://scenes/world.gd" id="1_48yd5"]
 [ext_resource type="Texture2D" uid="uid://b7cx3lnghcl3x" path="res://Assets/sprites/tilesets/grass.png" id="2_qvqtm"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://bm3mdiga6riww" path="res://Assets/sprites/Animated stuff/water_waves_16x16.png" id="8_hq7yo"]
 [ext_resource type="PackedScene" uid="uid://dgjffilasq7bs" path="res://scenes/old_man.tscn" id="10_omcjg"]
 [ext_resource type="PackedScene" uid="uid://bit16j6jm3we0" path="res://scenes/sandle.tscn" id="12_0fa4e"]
+[ext_resource type="AudioStream" uid="uid://c4b4i7ayqjhdy" path="res://Inventory_folder/items/QUEST(quest).mp3" id="13_f42c5"]
+[ext_resource type="Script" path="res://scenes/AudioStreamPlayer.gd" id="14_chjey"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j2k2e"]
 texture = ExtResource("3_vsqku")
@@ -1008,5 +1010,9 @@ position = Vector2(965, 398)
 
 [node name="player" parent="." instance=ExtResource("4_gsrqq")]
 position = Vector2(663, 496)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_f42c5")
+script = ExtResource("14_chjey")
 
 [connection signal="sandle_collected" from="player" to="Old Man" method="_on_player_sandle_collected"]
