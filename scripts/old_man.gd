@@ -58,6 +58,10 @@ func _process(delta):
 			is_roaming = false
 			is_chatting = true
 			$AnimatedSprite2D.play("idle")
+	if Input.is_action_just_pressed("quest"):
+		if player_in_chat_zone:
+			$NPC_quest.check_quest()
+	
 			
 func check():
 	if Input.is_action_just_pressed("quest"):

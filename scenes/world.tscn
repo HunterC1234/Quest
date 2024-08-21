@@ -977,7 +977,7 @@ layer_4/tile_data = PackedInt32Array(-131061, 589824, 15, -131057, 589824, 15, -
 position = Vector2(699, 480)
 
 [node name="Old Man" parent="." instance=ExtResource("10_omcjg")]
-position = Vector2(633, 609)
+position = Vector2(813, 438)
 
 [node name="fadein" type="ColorRect" parent="."]
 visible = false
@@ -1000,11 +1000,8 @@ libraries = {
 "": SubResource("AnimationLibrary_r1jqy")
 }
 
-[node name="sandle" parent="." instance=ExtResource("12_0fa4e")]
-position = Vector2(1042, 337)
-
 [node name="sandle2" parent="." instance=ExtResource("12_0fa4e")]
-position = Vector2(965, 398)
+position = Vector2(313, 512)
 
 [node name="player" parent="." instance=ExtResource("4_gsrqq")]
 position = Vector2(663, 496)

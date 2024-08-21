@@ -5,20 +5,23 @@ signal quest_menu_closed
 var quest1_active = false
 var quest1_completed = false
 var sandle = 0
- 
-func _process(delta):
+
+
+func check_quest():
 	if quest1_active:
 		if sandle == 1:
-			print("quest1 completed")
-			quest1_active = false
-			quest1_completed = true
-			play_finish_quest_anim()
-	#if quest 2 active.. etc.
-	
+			if Input.is_action_just_pressed("quest"):
+				print("quest1 completed")
+				quest1_active = false
+				quest1_completed = true
+				play_finish_quest_anim()
 
 
 func quest1_chat():
-	$quest1_ui.visible = true 
+	if quest1_completed == false:
+		if quest1_active == false:
+			$quest1_ui.visible = true 
+			print("printing quest ui")
 	
 func next_quest():
 	if !quest1_completed:
@@ -33,10 +36,15 @@ func next_quest():
 
 
 func _on_yes_button_1_pressed():
-	$quest1_ui.visible = false
 	quest1_active = true
+	print("quest1_active = true")
+	$quest1_ui.visible = false
+	$quest1_active.visible = true
+	await get_tree().create_timer(3).timeout
+	$quest1_active.visible = false
 	sandle = 0
 	emit_signal("quest_menu_closed")
+	
 
 
 func _on_no_button_1_pressed():
